@@ -26,3 +26,6 @@
 /var/resource_config.json
 
 sitemap.xml
+
+.idea/
+*.iml
