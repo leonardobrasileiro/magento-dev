@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LesteTI_Helloworld>
+            <active>true</active>
+            <codePool>local</codePool>
+        </LesteTI_Helloworld>
+    </modules>
+</config>
