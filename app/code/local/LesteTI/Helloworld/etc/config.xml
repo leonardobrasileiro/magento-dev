@@ -5,4 +5,22 @@
             <version>0.0.1</version>
         </LesteTI_Helloworld>
     </modules>
+
+    <global>
+        <blocks>
+            <helloworld>
+                <class>LesteTI_Helloworld_Block</class>
+            </helloworld>
+        </blocks>
+        <helpers>
+            <helloworld>
+                <class>LesteTI_Helloworld_Helper</class>
+            </helloworld>
+        </helpers>
+        <models>
+            <helloworld>
+                <class>LesteTI_Helloworld_Model</class>
+            </helloworld>
+        </models>
+    </global>
 </config>
