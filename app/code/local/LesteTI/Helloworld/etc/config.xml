@@ -34,5 +34,13 @@
                 </args>
             </helloworld>
         </routers>
+
+        <layout>
+            <updates>
+                <helloworld>
+                    <file>helloworld.xml</file>
+                </helloworld>
+            </updates>
+        </layout>
     </frontend>
 </config>

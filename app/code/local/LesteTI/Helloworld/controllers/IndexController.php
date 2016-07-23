@@ -14,7 +14,8 @@ class LesteTI_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
     }
 
     public function helloAction() {
-        echo 'Action hello in Helloworld IndexController';
+        $this->loadLayout();
+        $this->renderLayout();
     }
 
 }
