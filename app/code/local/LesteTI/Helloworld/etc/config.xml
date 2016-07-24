@@ -31,6 +31,17 @@
                 </rewrite>
             </catalog>
         </models>
+        <resources>
+            <helloworld_setup>
+                <setup>
+                    <module>LesteTI_Helloworld</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </helloworld_setup>
+        </resources>
     </global>
 
     <frontend>
