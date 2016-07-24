@@ -13,8 +13,16 @@ class LesteTI_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
         $connection = $resource->getConnection('core_read');
 
         $results = $connection->query('select * from core_store')->fetchAll();
-        
+
         Zend_Debug::dump($results);
+    }
+
+    public function flatAction() {
+        $reviews = Mage::getModel('review/review')->getCollection();
+
+        foreach ($reviews as $_review) {
+            echo $_review->getReviewUrl() . '<br/>';
+        }
     }
 
     public function helloAction() {
