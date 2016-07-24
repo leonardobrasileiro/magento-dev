@@ -49,6 +49,18 @@
         </resources>
     </global>
 
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <helloworld before="Mage_Adminhtml">LesteTI_Helloworld_Adminhtml</helloworld>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <frontend>
         <routers>
             <helloworld>
