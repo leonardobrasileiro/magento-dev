@@ -9,8 +9,12 @@
 class LesteTI_Helloworld_IndexController extends Mage_Core_Controller_Front_Action {
 
     public function indexAction() {
-        $this->loadLayout();
-        $this->renderLayout();
+        $resource = Mage::getSingleton('core/resource');
+        $connection = $resource->getConnection('core_read');
+
+        $results = $connection->query('select * from core_store')->fetchAll();
+        
+        Zend_Debug::dump($results);
     }
 
     public function helloAction() {
