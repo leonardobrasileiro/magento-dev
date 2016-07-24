@@ -21,6 +21,11 @@
             <helloworld>
                 <class>LesteTI_Helloworld_Model</class>
             </helloworld>
+            <catalog>
+                <rewrite>
+                    <product>LesteTI_Helloworld_Model_Catalog_Product</product>
+                </rewrite>
+            </catalog>
         </models>
     </global>
 
