@@ -20,7 +20,11 @@
         <models>
             <helloworld>
                 <class>LesteTI_Helloworld_Model</class>
+                <resourceModel>helloworld_resource</resourceModel>
             </helloworld>
+            <helloworld_resource>
+                <class>LesteTI_Helloworld_Model_Resource</class>
+            </helloworld_resource>
             <catalog>
                 <rewrite>
                     <product>LesteTI_Helloworld_Model_Catalog_Product</product>
