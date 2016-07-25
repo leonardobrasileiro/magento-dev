@@ -47,6 +47,13 @@ class LesteTI_Helloworld_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtm
             'header' => Mage::helper('helloworld')->__('Email'),
             'sortable' => false,
         ));
+        $this->addColumn('status', array (
+            'index' => 'status',
+            'header' => Mage::helper('helloworld')->__('Status'),
+            'sortable' => true,
+            'frame_callback' => array($this, 'prepareStatusLayout'),
+            'width' => '150px',
+        ));
 
         return parent::_prepareColumns();
     }
@@ -55,6 +62,22 @@ class LesteTI_Helloworld_Block_Adminhtml_Subscription_Grid extends Mage_Adminhtm
         return $this->getUrl('*/*/grid', array(
             '_current' => true,
         ));
+    }
+
+    public function prepareStatusLayout($value) {
+        $class = '';
+        switch ($value) {
+            case 'pending':
+                $class = 'grid-severity-notice';
+                break;
+            case 'approved':
+                $class = 'grid-severity-major';
+                break;
+            case 'declined':
+                $class = 'grid-severity-critical';
+                break;
+        }
+        return '<spen class="'.$class.'"><span>'.$value.'</span></span>';
     }
 
 }
