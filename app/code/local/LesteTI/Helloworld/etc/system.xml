@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <lesteti translate="label" module="helloworld">
+            <label>Leste TI</label>
+            <sort_order>100</sort_order>
+        </lesteti>
+    </tabs>
+    <sections>
+        <lesteti translate="label" module="helloworld">
+            <label>Helloworld</label>
+            <tab>lesteti</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <hellopage translate="label" module="helloworld">
+                    <label>Hello page settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <header_title translate="label">
+                            <label>Header title</label>
+                            <comment>Informe o título do cabeçalho</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_title>
+                    </fields>
+                </hellopage>
+            </groups>
+        </lesteti>
+    </sections>
+</config>
