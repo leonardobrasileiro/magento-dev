@@ -1290,6 +1290,9 @@ class Mage_Core_Model_App
     public function dispatchEvent($eventName, $args)
     {
         $eventName = strtolower($eventName);
+        // Lista completo dos eventos do Magento
+        // http://www.magentocommerce.com/wiki/5_-_modules_and_development/reference/magento_events
+//        Mage::log($eventName);
         foreach ($this->_events as $area=>$events) {
             if (!isset($events[$eventName])) {
                 $eventConfig = $this->getConfig()->getEventConfig($area, $eventName);
