@@ -27,6 +27,14 @@ class LesteTI_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
 
     public function helloAction() {
         $this->loadLayout();
+
+        $parameters = array(
+            'product' => Mage::getModel('catalog/product')->load(166),
+            'category' => Mage::getModel('catalog/category')->load(10),
+        );
+
+        Mage::dispatchEvent('helloworld_register_visit', $parameters);
+
         $this->renderLayout();
     }
 
