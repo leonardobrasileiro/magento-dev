@@ -47,6 +47,17 @@
                 </connection>
             </helloworld_setup>
         </resources>
+        <events>
+            <helloworld_register_visit>
+                <observers>
+                    <register_visit>
+                        <type>singleton</type>
+                        <class>helloworld/observer</class>
+                        <method>registerVisit</method>
+                    </register_visit>
+                </observers>
+            </helloworld_register_visit>
+        </events>
     </global>
 
     <admin>
