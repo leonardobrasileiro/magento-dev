@@ -57,6 +57,15 @@
                     </register_visit>
                 </observers>
             </helloworld_register_visit>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <check_cart_qty>
+                        <type>singleton</type>
+                        <class>helloworld/observer</class>
+                        <method>checkCartQty</method>
+                    </check_cart_qty>
+                </observers>
+            </checkout_cart_product_add_after>
         </events>
     </global>
 

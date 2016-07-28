@@ -14,4 +14,13 @@ class LesteTI_Helloworld_Model_Observer {
         Mage::log('helloworld: ' . $observer->getCategory()->debug());
     }
 
+    public function checkCartQty($observer) {
+        if ($observer->getProduct()->getQty() % 2 == 0) {
+            Mage::getSingleton('checkout/session')->addNotice('Helloworld: Even quantity added');
+        } else {
+            Mage::throwException('Quantity is odd. It needs to be even');
+        }
+
+    }
+
 }
